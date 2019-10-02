@@ -1,7 +1,9 @@
 <chapter xmlns="http://docbook.org/ns/docbook"
          xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
          xml:id="chap-submitting-changes">
  <title>Submitting changes</title>
+ <xi:include href="./submitting-changes/pull-request-workflow.section.xml" />
  <section xml:id="submitting-changes-making-patches">
   <title>Making patches</title>
 

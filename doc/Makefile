@@ -44,6 +44,9 @@ out/html/index.html: doc-support/result manual-full.xml style.css highlightjs
 
 	mkdir -p out/html/images/callouts
 	cp doc-support/result/xsl/docbook/images/callouts/*.svg out/html/images/callouts/
+	mkdir -p out/html/images/submitting-changes/
+	cp submitting-changes/*.svg out/html/images/submitting-changes/
+
 	chmod u+w -R out/html/
 
 out/epub/manual.epub: manual-full.xml
@@ -57,6 +60,8 @@ out/epub/manual.epub: manual-full.xml
 	cp ./style.css out/epub/scratch/OEBPS
 	mkdir -p out/epub/scratch/OEBPS/images/callouts/
 	cp doc-support/result/xsl/docbook/images/callouts/*.svg out/epub/scratch/OEBPS/images/callouts/
+	mkdir -p out/epub/scratch/OEBPS/images/submitting-changes/
+	cp submitting-changes/*.svg out/epub/scratch/OEBPS/images/submitting-changes/
 	echo "application/epub+zip" > mimetype
 	zip -0Xq "out/epub/manual.epub" mimetype
 	rm mimetype
